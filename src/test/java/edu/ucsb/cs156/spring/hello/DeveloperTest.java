@@ -25,6 +25,11 @@ public class DeveloperTest {
         assertEquals("Scott", Developer.getName());
     }
 
+    @Test
+    public void getGithubId_returns_correct_id() {
+        assertEquals("RealWeston34", Developer.getGithubId());
+    }
+    @Test
     public void getTeam_returns_correct_team_with_correct_name() {
         Team t = Developer.getTeam();
         assertEquals("f24-01", t.getName());

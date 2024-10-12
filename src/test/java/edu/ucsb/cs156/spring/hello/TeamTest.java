@@ -36,11 +36,13 @@ public class TeamTest {
 
         other2.addMember("test");
         other4.addMember("test");
-
+        
         assert(team.equals(other1));
+        assert(team.equals(team));
         assert(!team.equals(other2));
         assert(!team.equals(other3));
         assert(!team.equals(other4));
+        assert(!team.equals(null));
     }
 
     @Test
